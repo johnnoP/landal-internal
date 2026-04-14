@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landal Landing Page</title>
+  <style>
+    :root {
+      --forest: #123b2a;
+      --forest-soft: #1c5b41;
+      --sand: #f5f1e8;
+      --cream: #fffdf8;
+      --text: #1d2a22;
+      --accent: #f2b84b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(242, 184, 75, 0.18), transparent 30%),
+        linear-gradient(180deg, var(--sand), #ebe3d3);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(720px, 100%);
+      background: rgba(255, 253, 248, 0.92);
+      border: 1px solid rgba(18, 59, 42, 0.12);
+      border-radius: 24px;
+      padding: 48px 32px;
+      box-shadow: 0 20px 60px rgba(18, 59, 42, 0.12);
+      text-align: center;
+    }
+
+    .eyebrow {
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font: 600 0.8rem/1.2 Arial, sans-serif;
+      color: var(--forest-soft);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.3rem, 6vw, 4.5rem);
+      line-height: 0.95;
+      color: var(--forest);
+    }
+
+    p {
+      margin: 0 auto 28px;
+      max-width: 520px;
+      font: 1.05rem/1.7 Arial, sans-serif;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--forest);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font: 600 1rem/1 Arial, sans-serif;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    a:hover {
+      background: var(--forest-soft);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Welcome</div>
+    <h1>Start Your Landal Experience</h1>
+    <p>
+      This is the first landing page served by the new Node server. Continue to the
+      existing experience when you are ready.
+    </p>
+    <a href="/index.html">Open Main Page</a>
+  </main>
+</body>
+</html>
