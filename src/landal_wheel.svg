@@ -1,0 +1,73 @@
+<svg viewBox="0 0 640 680" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;max-width:640px;display:block;margin:auto;background:#FCFAF0;">
+<title>Landal wheel of fortune</title>
+<defs>
+  <style>
+    .wheel {
+      transform-origin: 320px 360px;
+      animation: spin-decel 20s cubic-bezier(0,0,1,1) infinite;
+    }
+    @keyframes spin-decel {
+      0%   { transform: rotate(0deg);    animation-timing-function: cubic-bezier(0.4,0,0.2,1); }
+      72%  { transform: rotate(1080deg); animation-timing-function: steps(1,end); }
+      100% { transform: rotate(1080deg); }
+    }
+  </style>
+</defs>
+
+<!-- Arrow pointer — fixed, same teal as logo -->
+<g fill="#00A8A8">
+  <circle cx="320" cy="110" r="7"/>
+  <rect x="315" y="117" width="10" height="28"/>
+  <polygon points="320,178 292,148 348,148"/>
+</g>
+
+<!-- Rotating wheel -->
+<g class="wheel">
+  <!-- 40 ticks, each rotated i*9 degrees around center 320,360 -->
+  <!-- rect starts at y=308 (= 360-185-1 approx inner radius edge), extends outward -->
+  <g transform="rotate(0,320,360)">  <rect x="315.5" y="175" width="9"  height="38" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(9,320,360)">  <rect x="314"   y="175" width="13" height="28" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(18,320,360)"> <rect x="316.5" y="175" width="7"  height="45" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(27,320,360)"> <rect x="312.5" y="175" width="15" height="32" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(36,320,360)"> <rect x="315"   y="175" width="10" height="50" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(45,320,360)"> <rect x="314"   y="175" width="12" height="24" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(54,320,360)"> <rect x="314.5" y="175" width="11" height="42" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(63,320,360)"> <rect x="316"   y="175" width="8"  height="36" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(72,320,360)"> <rect x="313"   y="175" width="14" height="48" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(81,320,360)"> <rect x="315.5" y="175" width="9"  height="30" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(90,320,360)"> <rect x="313.5" y="175" width="13" height="44" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(99,320,360)"> <rect x="316.5" y="175" width="7"  height="26" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(108,320,360)"><rect x="314.5" y="175" width="11" height="52" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(117,320,360)"><rect x="312.5" y="175" width="15" height="38" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(126,320,360)"><rect x="315"   y="175" width="10" height="29" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(135,320,360)"><rect x="314"   y="175" width="12" height="46" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(144,320,360)"><rect x="316"   y="175" width="8"  height="34" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(153,320,360)"><rect x="315"   y="175" width="10" height="51" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(162,320,360)"><rect x="313"   y="175" width="14" height="27" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(171,320,360)"><rect x="315.5" y="175" width="9"  height="40" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(180,320,360)"><rect x="313.5" y="175" width="13" height="33" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(189,320,360)"><rect x="316.5" y="175" width="7"  height="47" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(198,320,360)"><rect x="314.5" y="175" width="11" height="23" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(207,320,360)"><rect x="312.5" y="175" width="15" height="43" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(216,320,360)"><rect x="315.5" y="175" width="9"  height="36" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(225,320,360)"><rect x="314"   y="175" width="12" height="50" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(234,320,360)"><rect x="316"   y="175" width="8"  height="28" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(243,320,360)"><rect x="314.5" y="175" width="11" height="44" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(252,320,360)"><rect x="313"   y="175" width="14" height="31" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(261,320,360)"><rect x="315"   y="175" width="10" height="49" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(270,320,360)"><rect x="315.5" y="175" width="9"  height="25" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(279,320,360)"><rect x="313.5" y="175" width="13" height="41" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(288,320,360)"><rect x="316.5" y="175" width="7"  height="35" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(297,320,360)"><rect x="312.5" y="175" width="15" height="53" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(306,320,360)"><rect x="315.5" y="175" width="9"  height="30" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(315,320,360)"><rect x="314"   y="175" width="12" height="45" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(324,320,360)"><rect x="316.5" y="175" width="7"  height="37" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(333,320,360)"><rect x="314.5" y="175" width="11" height="22" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(342,320,360)"><rect x="313"   y="175" width="14" height="48" fill="#00A8A8" rx="2"/></g>
+  <g transform="rotate(351,320,360)"><rect x="315"   y="175" width="10" height="33" fill="#00A8A8" rx="2"/></g>
+
+  <!-- Pause bars — identical, centered on 320,360 -->
+  <rect x="282" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
+  <rect x="348" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
+</g>
+</svg>
