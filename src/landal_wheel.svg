@@ -24,7 +24,6 @@
 <!-- Rotating wheel -->
 <g class="wheel">
   <!-- 40 ticks, each rotated i*9 degrees around center 320,360 -->
-  <!-- rect starts at y=308 (= 360-185-1 approx inner radius edge), extends outward -->
   <g transform="rotate(0,320,360)">  <rect x="315.5" y="175" width="9"  height="38" fill="#00A8A8" rx="2"/></g>
   <g transform="rotate(9,320,360)">  <rect x="314"   y="175" width="13" height="28" fill="#00A8A8" rx="2"/></g>
   <g transform="rotate(18,320,360)"> <rect x="316.5" y="175" width="7"  height="45" fill="#00A8A8" rx="2"/></g>
@@ -67,7 +66,8 @@
   <g transform="rotate(351,320,360)"><rect x="315"   y="175" width="10" height="33" fill="#00A8A8" rx="2"/></g>
 
   <!-- Pause bars — identical, centered on 320,360 -->
-  <rect x="282" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
-  <rect x="348" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
+  <!-- center=320, gap=28, barW=52: left x=320-14-52=254, right x=320+14=334 -->
+  <rect x="254" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
+  <rect x="334" y="280" width="52" height="160" rx="4" fill="#00A8A8"/>
 </g>
 </svg>
